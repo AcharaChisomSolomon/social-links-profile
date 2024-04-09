@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Inter-400';
+    src: url(../assets/fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Inter-600';
+    src: url(../assets/fonts/static/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: 'Inter-700';
+    src: url(../assets/fonts/static/Inter-Bold.ttf);
+}
+:root {
+    --main-background-color: #141414;
+    --card-background-color: #1f1f1f;
+    --card-primary-color: #fff;
+    --card-secondary-color: #c4f82a;
+}
