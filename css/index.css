@@ -15,4 +15,87 @@
     --card-background-color: #1f1f1f;
     --card-primary-color: #fff;
     --card-secondary-color: #c4f82a;
+    --link-background-color: #333;
+}
+
+body {
+    font-family: 'Inter-700', sans-serif;
+    background-color: var(--main-background-color);
+    color: var(--card-primary-color);
+    margin: 0;
+    padding: 0;
+    user-select: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, p {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+#card {
+    background-color: var(--card-background-color);
+    width: 20.4375rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.user-img {
+    width: 5.5rem;
+    height: 5.5rem;
+}
+
+.user__name {
+    font-family: 'Inter-600', sans-serif;
+    font-size: 1.5rem;
+}
+.user__location {
+    font-size: 0.875rem;
+    color: var(--card-secondary-color);
+    margin-bottom: 1.5rem;
+}
+.user__description {
+    font-family: 'Inter-400', sans-serif;
+    font-size: 0.875rem;
+}
+
+.user__links {
+    width: 100%;
+}
+.user__link {
+    background-color: var(--link-background-color);
+    padding: 0.75rem 0;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.user__link:last-child {
+    margin-bottom: 0;
+}
+.user__link:hover {
+    background-color: var(--card-secondary-color);
+}
+.user__link:hover a {
+    color: var(--card-background-color);
+}
+.user__links a {
+    color: var(--card-primary-color);
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: inherit;
 }
